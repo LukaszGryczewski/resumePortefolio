@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +16,8 @@ import { ContactComponent } from './contact/contact.component';
             HomeComponent,
             ResumeComponent,
             PortfolioComponent,
-            ContactComponent
+            ContactComponent,
+            RouterLink,
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -9,5 +9,6 @@ export const routes: Routes = [
   {path:'resume', component:ResumeComponent},
   {path:'portfolio', component:PortfolioComponent},
   {path:'contact', component:ContactComponent},
+  {path:'**', component:HomeComponent, pathMatch:'full'},
 
 ];
