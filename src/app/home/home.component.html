@@ -17,8 +17,13 @@
       <div class ="text-center">
         <h1>Feature Project</h1>
         <h4>{{ featureProject.name }}</h4>
+        <carousel>
+          <div *ngFor="let picture of featureProject.pictures">
+            <slide><img [src]="picture" alt="slide" style="display: block;" width="100%"></slide>
+          </div>
+        </carousel>
         <h5>{{ featureProject.summary }}</h5>
-        <p>{{ featureProject.description }}</p>
+
       </div>
     </div>
   </div>
