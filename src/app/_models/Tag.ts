@@ -15,6 +15,11 @@ export class Tag {
 
   constructor(private readonly key : string, public readonly color : string ){}
 
+
+  getKey(): string {
+    return this.key;
+  }
+
   toString() {
     return this.key;
   }

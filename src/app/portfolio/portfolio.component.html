@@ -1,10 +1,18 @@
 <div class ="container">
 
-  <div class ="row">
-    <div *ngFor="let project of projects" class ="col-lg-6 col-md-6 col-mb-4" style="max-width: 380px; min-width:380px;">
-      <app-project-card [project]="project"></app-project-card>
-    </div>
+  <button (click)="toggleTags()">Filter</button>
+
+  <div *ngIf="showTags" class ="tags-filter">
+    <label *ngFor="let tags of availableTags">
+      <input type="checkbox" [(ngModel)]="tags.selected" (change)="filterProjects()" />
+      {{ tags.tag.getKey() }}
+    </label>
   </div>
+
+  <div class ="projects-list">
+    <app-project-card *ngFor="let project of filteredProjects" [project]="project"></app-project-card>
+  </div>
+
 </div>
 
 
