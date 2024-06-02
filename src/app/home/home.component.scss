@@ -1,0 +1,97 @@
+/* Adds a top margin of 20 pixels to elements with the container class */
+.container {
+  margin-top: 20px;
+}
+
+/* Applies a light shadow to elements with the shadow-sm class */
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Applies a solid border of 1 pixel with color #dee2e6 to elements with the border class */
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+/* Applies a border-radius of 8 pixels to elements with the rounded class */
+.rounded {
+  border-radius: 8px !important;
+}
+
+/* Adds padding of 1.5rem (24 pixels) to elements with the p-3 class */
+.p-3 {
+  padding: 1.5rem !important;
+}
+
+/* Adds a bottom margin of 1.5rem (24 pixels) to elements with the mb-4 class */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Centers the text of elements with the text-center class */
+.text-center {
+  text-align: center !important;
+}
+
+/* Sets the font size to 1.25rem and the font weight to 300 for elements with the lead class */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Applies a border-radius of 8 pixels, ensures the image covers its container, and sets the height to 300 pixels for carousel item images */
+.carousel .carousel-item img {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 300px;
+}
+
+/* Sets the background color of the carousel control previous and next icons to black, rounds the edges, and adds 10 pixels of padding */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Sets the background color of carousel indicators to black */
+.carousel-indicators li {
+  background-color: #000;
+}
+
+/* Sets the background color of active carousel indicators to white */
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* Sets the font size to 2rem, font weight to 700, and text color to #343a40 for h1 elements */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* Sets the font size to 1.5rem, font weight to 600, and text color to #495057 for h4 elements */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* Sets the font size to 1.25rem, font weight to 500, and text color to #6c757d for h5 elements */
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+/* Adds a solid border of 3 pixels with color #495057 to images with the img-rounded-circle class */
+.img-rounded-circle {
+  border: 3px solid #495057;
+}
+
+/* Sets the body font to 'Arial' and the background color to #f8f9fa */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}

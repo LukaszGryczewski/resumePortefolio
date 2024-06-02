@@ -1,18 +1,20 @@
-<div class ="container">
-
-  <button (click)="toggleTags()">Filter</button>
-
-  <div *ngIf="showTags" class ="tags-filter">
-    <label *ngFor="let tags of availableTags">
-      <input type="checkbox" [(ngModel)]="tags.selected" (change)="filterProjects()" />
-      {{ tags.tag.getKey() }}
-    </label>
+<div class ="container mt-4">
+  <div class ="d-flex justify-content-end mb-3">
+    <button class ="btn btn-view-filter" (click)="toggleTags()">Filter</button>
   </div>
 
-  <div class ="projects-list">
-    <app-project-card *ngFor="let project of filteredProjects" [project]="project"></app-project-card>
+  <div *ngIf="showTags" class ="tags-filter mb-3">
+    <div class ="tags-filter" *ngFor="let tags of availableTags">
+      <input class ="form-check-input" type="checkbox" [(ngModel)]="tags.selected" (change)="filterProjects()" id="{{tags.tag.getKey()}}">
+      <label class ="form-check-label" for="{{tags.tag.getKey()}}">
+        {{ tags.tag.getKey() }}
+      </label>
+    </div>
   </div>
 
+  <div class ="row">
+    <div class ="col-md-4 mb-4" *ngFor="let project of filteredProjects">
+      <app-project-card [project]="project"></app-project-card>
+    </div>
+  </div>
 </div>
-
-

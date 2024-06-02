@@ -1,12 +1,120 @@
 .tags-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  display: flex; /* Display as flexbox */
+  flex-wrap: wrap; /* Allow wrapping of flex items */
+  gap: 10px; /* Space between flex items */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+.btn-view-filter {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #495057; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  border: 1px solid #dee2e6; /* Light border */
+}
+
+/* Tags */
+.tag {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border-radius: 20px; /* Rounded corners */
+  padding: 5px 10px; /* Inner spacing */
+  margin-right: 5px; /* Right margin for spacing between tags */
+  text-align: center; /* Center the text */
+}
+
+/* Style modifications for selected tags */
+.tag.selected {
+  background-color: #0056b3; /* Darker blue background */
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: flex; /* Display as flexbox */
+  flex-wrap: wrap; /* Allow wrapping of flex items */
+  gap: 20px; /* Space between flex items */
+}
+
+/* Container and Row */
+.container {
+  margin-top: 20px; /* Top margin */
+}
+
+/* Shadow and Border */
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Light shadow for depth */
+}
+
+.border {
+  border: 1px solid #dee2e6 !important; /* Light border */
+}
+
+.rounded {
+  border-radius: 8px !important; /* Rounded corners */
+}
+
+.p-3 {
+  padding: 1.5rem !important; /* Inner padding */
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important; /* Bottom margin */
+}
+
+/* Text Alignment and Styling */
+.text-center {
+  text-align: center !important; /* Center align text */
+}
+
+.lead {
+  font-size: 1.25rem; /* Font size */
+  font-weight: 300; /* Light font weight */
+}
+
+/* Carousel Styling */
+.carousel .carousel-item img {
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Cover the container */
+  height: 300px; /* Fixed height */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Black background */
+  border-radius: 50%; /* Rounded shape */
+  padding: 10px; /* Inner padding */
+}
+
+.carousel-indicators li {
+  background-color: #000; /* Black background */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* White background for active indicator */
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2rem; /* Font size */
+  font-weight: 700; /* Bold font weight */
+  color: #343a40; /* Dark text color */
+}
+
+h4 {
+  font-size: 1.5rem; /* Font size */
+  font-weight: 600; /* Semi-bold font weight */
+  color: #495057; /* Medium dark text color */
+}
+
+h5 {
+  font-size: 1.25rem; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  color: #6c757d; /* Light dark text color */
+}
+
+.img-rounded-circle {
+  border: 3px solid #495057; /* Border with medium dark color */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Font family */
+  background-color: #f8f9fa; /* Light gray background */
 }

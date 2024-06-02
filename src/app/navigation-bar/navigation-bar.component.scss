@@ -1,0 +1,27 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.nav-link {
+  font-size: 1.1em; /* Slightly larger font size */
+  font-weight: 500; /* Medium weight for better readability */
+  color: #5a5a5a; /* Default color */
+  transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff !important; /* Bootstrap primary color on hover and active */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  /* Custom icon for navbar toggler with three horizontal lines */
+}
+

@@ -8,18 +8,21 @@ import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
             HeaderComponent,
             NavigationBarComponent,
             HomeComponent,
             ResumeComponent,
             PortfolioComponent,
             ContactComponent,
+            FooterComponent,
+            RouterOutlet,
             RouterLink,
             NgbModalModule,
           ],
