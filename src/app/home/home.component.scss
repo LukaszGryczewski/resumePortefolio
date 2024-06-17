@@ -74,20 +74,23 @@ h1 {
   font-size: 2rem; /* Sets the font size to 2 rem */
   font-weight: 700; /* Sets the font weight to 700 */
   color: #343a40; /* Sets the text color to dark gray */
+  margin-bottom: 20px !important;
 }
 
 /* Sets the font size to 1.5rem, font weight to 600, and text color to #495057 for h4 elements */
 h4 {
   font-size: 1.5rem; /* Sets the font size to 1.5 rem */
   font-weight: 600; /* Sets the font weight to 600 */
-  color: #495057; /* Sets the text color to medium gray */
+  color: #3a4047; /* Sets the text color to medium gray */
+  margin-bottom: 20px !important;
 }
 
 /* Sets the font size to 1.25rem, font weight to 500, and text color to #6c757d for h5 elements */
-h5 {
-  font-size: 1.25rem; /* Sets the font size to 1.25 rem */
+.p-projects {
+  font-size: 1.10rem; /* Sets the font size to 1.25 rem */
   font-weight: 500; /* Sets the font weight to 500 */
-  color: #6c757d; /* Sets the text color to light gray */
+  color: #3a4047;; /* Sets the text color to light gray */
+
 }
 
 /* Adds a solid border of 3 pixels with color #495057 to images with the img-rounded-circle class */
@@ -95,8 +98,24 @@ h5 {
   border: 3px solid #495057; /* Adds a 3-pixel solid border with medium gray color */
 }
 
+
+.btn{
+  margin-bottom: 10px;
+}
+
 /* Sets the body font to 'Arial' and the background color to #f8f9fa */
 body {
   font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
   background-color: #f8f9fa; /* Sets the background color to light gray */
+}
+
+ngb-carousel{
+  margin-bottom: 20px;
+}
+
+.btn-navigation {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #495057; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  border: 1px solid #dee2e6; /* Light border */
 }
