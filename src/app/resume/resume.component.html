@@ -1,1 +1,164 @@
-<p>resume works!</p>
+<div class ="container my-5">
+  <div class ="text-center">
+      <button (click)="DowloadFile()" class ="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+  </div>
+
+  <div ngbAccordion>
+      <div ngbAccordionItem>
+          <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class ="button-accordion">Profile</button>
+          </h2>
+          <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                  <ng-template>
+                      <div class ="profile">
+                          <div class ="profile-contact text-center">
+                              <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" class="rounded-circle my-3" style="width: 250px; height: 250px;">
+                          </div>
+                          <div class ="profile-description text-justify">
+                              <p>
+                                  Passionate about IT, development and technology, I am looking for a stimulating professional opportunity. Highly motivated and ready to take on new challenges, I am committed to fully investing my skills and enthusiasm to contribute significantly.
+
+                                  Thanks to my bachelor's degree, I acquired solid skills in application development, particularly in object-oriented programming, web development and database management. I also have experience using modeling methods during the analysis phase, as well as network design and administration. My training allowed me to develop an in-depth understanding of economic concepts, management and legal bases in the field of IT.
+
+                                  I am determined to excel in a dynamic and innovative professional environment. To improve my skills, I take English courses and I continue to train myself. I am a flexible person, able to adapt quickly to situations. I work both in a team and individually.
+
+                                  With a positive attitude, I have a strong desire to learn and adapt. I am ready to share my knowledge and collaborate to achieve common goals. I enjoy social interactions, essential for teamwork and collaboration, but I also know how to be focused and productive working alone when necessary.
+
+                                  Although I do not yet have significant professional experience, apart from an internship at the Federal Police as a developer analyst in PHP and JavaScript with the CodeIgniter 3 framework, I am extremely motivated and able to adapt quickly.
+                              </p>
+                          </div>
+                      </div>
+                  </ng-template>
+              </div>
+          </div>
+      </div>
+
+      <div ngbAccordionItem>
+        <h2 ngbAccordionHeader>
+          <button ngbAccordionButton class ="button-accordion">Professional Experience</button>
+        </h2>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              <div class ="professional-experience">
+                <h3 class ="mb-0">Internship Developer Analyst</h3>
+                <h4 class ="text-primary">Federal Police</h4>
+                <h6><i>02/2023 - 05/2023</i></h6>
+                <div class ="experience-item">
+                  <h5>Feature Development</h5>
+                  <p>I worked in the sector responsible for the development of international applications, carrying out several functions in PHP using the CodeIgniter framework.</p>
+                </div>
+                <div class ="experience-item">
+                  <h5>Debugging and testing</h5>
+                  <p>I debugged and tested existing Federal Police applications using the Xdebug and Postman tools</p>
+                </div>
+                <div class ="experience-item">
+                  <h5>Collaboration and communication</h5>
+                  <p>The team works according to the SCRUM method. I collaborated with a team of developers, analysts and a project manager to understand needs and plan development and testing</p>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+
+      <div ngbAccordionItem>
+        <h2 ngbAccordionHeader>
+          <button ngbAccordionButton class ="button-accordion">Education</button>
+        </h2>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <ng-template>
+              <div class ="education">
+                <h3 class ="mb-0">Bachelor in Software development - Developer / Analyst</h3>
+                <h4 class ="text-primary">Institut des Carrières Commerciales</h4>
+                <h6><i>10/2019 – 10/2023 | Brussels, Belgium</i></h6>
+                <div class ="education-item">
+                  <h5><b>Specialization in application development</b></h5>
+                  <p>Including object-oriented programming, web development, and database management.</p>
+                </div>
+                <div class ="education-item">
+                  <h5><b>Modeling methods</b></h5>
+                  <p>Using modeling methods during the analysis phase</p>
+                </div>
+                <div class ="education-item">
+                  <h5><b>Network design and administration</b></h5>
+                  <p>Network design and administration</p>
+                </div>
+                <div class ="education-item">
+                  <h5><b>Basic economic, management and rights concepts</b></h5>
+                  <p>Understanding of basic economic, management and rights concepts in the IT field</p>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+
+      <div ngbAccordionItem>
+          <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class ="button-accordion">Languages</button>
+          </h2>
+          <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  <div class ="row">
+                    <div class ="col-md-3" *ngFor="let language of languages">
+                      <div class ="language-item">
+                        <span class ="language-name">{{ language.name }}</span>
+                        <div class ="skill-level">
+                          <span class ="skill-bullet" [ngClass]="{'filled': i < language.level}" *ngFor="let i of [1, 2, 3, 4, 5]"></span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+              </ng-template>
+              </div>
+          </div>
+      </div>
+
+      <div ngbAccordionItem>
+          <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class ="button-accordion">Skills</button>
+          </h2>
+          <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                  <ng-template>
+                    <div class ="row">
+                      <div class ="col-md-3" *ngFor="let skill of skills">
+                        <div class ="language-item">
+                          <span class ="language-name">{{ skill.name }}</span>
+                          <div class ="skill-level">
+                            <span class ="skill-bullet" [ngClass]="{'filled': i < skill.level}" *ngFor="let i of [1, 2, 3, 4, 5]"></span>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                  </ng-template>
+              </div>
+          </div>
+      </div>
+
+      <div ngbAccordionItem>
+          <h2 ngbAccordionHeader>
+              <button ngbAccordionButton class ="button-accordion">Technology</button>
+          </h2>
+          <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                  <ng-template>
+
+                    <div class ="row">
+                      <div class ="col-md-3" *ngFor="let technology of technologies">
+                        <div class ="language-item">
+                          <span class ="language-name">{{ technology.name }}</span>
+                        </div>
+                      </div>
+                      </div>
+
+                  </ng-template>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

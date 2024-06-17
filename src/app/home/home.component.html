@@ -1,11 +1,11 @@
-<div class ="container mt-4" >
+<div class ="container mt-4">
   <div class ="row">
     <!-- About me -->
     <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
       <div class ="text-center">
         <h1>About me</h1>
         <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" width="250px" height="250px" class="rounded-circle my-3">
-        <p class ="lead">
+        <p class ="lead" >
           Passionate about Java development, I am in search of an engaging professional opportunity. Highly motivated and ready to
           take on new challenges, I am committed to fully investing my skills and enthusiasm to contribute meaningfully. I am
           determined to excel in a dynamic and innovative professional environment.
@@ -16,24 +16,19 @@
     <!-- Feature project -->
     <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
       <div class ="text-center">
-        <h1>Feature Project</h1>
-        <h4>{{ featureProject.name }}</h4>
-        <div id="carouselFeatureProject" class ="carousel slide mt-3" data-ride="carousel">
-          <div class ="carousel-inner">
-            <div *ngFor="let picture of featureProject.pictures; let i = index" class ="carousel-item" [ngClass]="{'active': i === 0}">
-              <img class ="d-block w-100" [src]="picture" alt="slide">
-            </div>
-          </div>
-          <a class ="carousel-control-prev" href="#carouselFeatureProject" role="button" data-slide="prev">
-            <span class ="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class ="sr-only">Previous</span>
-          </a>
-          <a class ="carousel-control-next" href="#carouselFeatureProject" role="button" data-slide="next">
-            <span class ="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class ="sr-only">Next</span>
-          </a>
+        <div class ="text-center">
+          <h1>Feature Project</h1>
+          <h4>{{ projects[currentProjectIndex].name }}</h4>
+          <ngb-carousel *ngIf="projects.length > 0" [interval]="3000"> <!-- Définissez le délai ici -->
+            <ng-template ngbSlide *ngFor="let project of projects">
+              <img class ="d-block w-100" [src]="project.pictures[0]" alt="slide">
+            </ng-template>
+          </ngb-carousel>
+
+          <h5 class ="mt-3">{{ projects[currentProjectIndex].summary }}</h5>
+          <button (click)="navigatePrev()">Previous</button>
+          <button (click)="navigateNext()">Next</button>
         </div>
-        <h5 class ="mt-3">{{ featureProject.summary }}</h5>
       </div>
     </div>
   </div>

@@ -1,97 +1,102 @@
 /* Adds a top margin of 20 pixels to elements with the container class */
 .container {
-  margin-top: 20px;
+  margin-top: 20px; /* Adds a top margin of 20 pixels */
 }
 
 /* Applies a light shadow to elements with the shadow-sm class */
 .shadow-sm {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Adds a light shadow effect */
 }
 
 /* Applies a solid border of 1 pixel with color #dee2e6 to elements with the border class */
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #dee2e6 !important; /* Adds a 1-pixel solid border with a light gray color */
 }
 
 /* Applies a border-radius of 8 pixels to elements with the rounded class */
 .rounded {
-  border-radius: 8px !important;
+  border-radius: 8px !important; /* Rounds the corners with an 8-pixel radius */
 }
 
 /* Adds padding of 1.5rem (24 pixels) to elements with the p-3 class */
 .p-3 {
-  padding: 1.5rem !important;
+  padding: 1.5rem !important; /* Adds padding of 1.5 rem */
 }
 
 /* Adds a bottom margin of 1.5rem (24 pixels) to elements with the mb-4 class */
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem !important; /* Adds a bottom margin of 1.5 rem */
 }
 
 /* Centers the text of elements with the text-center class */
 .text-center {
-  text-align: center !important;
+  text-align: center !important; /* Centers the text */
 }
 
 /* Sets the font size to 1.25rem and the font weight to 300 for elements with the lead class */
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.25rem; /* Sets the font size to 1.25 rem */
+  font-weight: 300; /* Sets the font weight to 300 */
 }
 
 /* Applies a border-radius of 8 pixels, ensures the image covers its container, and sets the height to 300 pixels for carousel item images */
 .carousel .carousel-item img {
-  border-radius: 8px;
-  object-fit: cover;
-  height: 300px;
+  border-radius: 8px; /* Rounds the corners with an 8-pixel radius */
+  object-fit: cover; /* Ensures the image covers the container */
+  height: 300px; /* Sets the height to 300 pixels */
 }
 
 /* Sets the background color of the carousel control previous and next icons to black, rounds the edges, and adds 10 pixels of padding */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000;
-  border-radius: 50%;
-  padding: 10px;
+  background-color: #000; /* Sets the background color to black */
+  border-radius: 50%; /* Rounds the edges */
+  padding: 10px; /* Adds 10 pixels of padding */
 }
 
 /* Sets the background color of carousel indicators to black */
 .carousel-indicators li {
-  background-color: #000;
+  background-color: #000; /* Sets the background color to black */
 }
 
 /* Sets the background color of active carousel indicators to white */
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: #fff; /* Sets the background color to white */
+}
+
+/* Disables the transition for the carousel inner */
+.carousel-inner {
+  transition: none; /* Disables the transition */
 }
 
 /* Sets the font size to 2rem, font weight to 700, and text color to #343a40 for h1 elements */
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #343a40;
+  font-size: 2rem; /* Sets the font size to 2 rem */
+  font-weight: 700; /* Sets the font weight to 700 */
+  color: #343a40; /* Sets the text color to dark gray */
 }
 
 /* Sets the font size to 1.5rem, font weight to 600, and text color to #495057 for h4 elements */
 h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #495057;
+  font-size: 1.5rem; /* Sets the font size to 1.5 rem */
+  font-weight: 600; /* Sets the font weight to 600 */
+  color: #495057; /* Sets the text color to medium gray */
 }
 
 /* Sets the font size to 1.25rem, font weight to 500, and text color to #6c757d for h5 elements */
 h5 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #6c757d;
+  font-size: 1.25rem; /* Sets the font size to 1.25 rem */
+  font-weight: 500; /* Sets the font weight to 500 */
+  color: #6c757d; /* Sets the text color to light gray */
 }
 
 /* Adds a solid border of 3 pixels with color #495057 to images with the img-rounded-circle class */
 .img-rounded-circle {
-  border: 3px solid #495057;
+  border: 3px solid #495057; /* Adds a 3-pixel solid border with medium gray color */
 }
 
 /* Sets the body font to 'Arial' and the background color to #f8f9fa */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
+  background-color: #f8f9fa; /* Sets the background color to light gray */
 }

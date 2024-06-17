@@ -1,0 +1,53 @@
+.language-item {
+  margin-bottom: 15px; /* Adds space below each language item */
+  padding: 10px; /* Adds padding inside each language item */
+  border: 1px solid #ccc; /* Adds a light gray border around each language item */
+  border-radius: 5px; /* Rounds the corners of each language item */
+  text-align: center; /* Centers the text inside each language item */
+}
+
+.language-name {
+  display: block; /* Displays the language name as a block element */
+  font-weight: bold; /* Makes the language name bold */
+  margin-bottom: 5px; /* Adds space below the language name */
+}
+
+.skill-level {
+  display: flex; /* Uses flexbox for the skill level container */
+  justify-content: center; /* Centers the skill bullets horizontally */
+}
+
+.skill-bullet {
+  width: 10px; /* Sets the width of each skill bullet */
+  height: 10px; /* Sets the height of each skill bullet */
+  background-color: #ddd; /* Sets the background color of each skill bullet to light gray */
+  border-radius: 50%; /* Makes each skill bullet a circle */
+  margin: 0 2px; /* Adds horizontal space between each skill bullet */
+  display: inline-block; /* Displays each skill bullet as an inline block element */
+}
+
+.skill-bullet.filled {
+  background-color: #000; /* Sets the background color of filled skill bullets to black */
+}
+
+.professional-experience, .education {
+  text-align: center; /* Centers the text inside professional experience and education sections */
+}
+
+.professional-experience h6, .education h6 {
+  margin-bottom: 40px; /* Adds space below each h6 element in professional experience and education sections */
+}
+
+.experience-item, .education-item {
+  margin-bottom: 15px; /* Adds space below each experience or education item */
+}
+
+.experience-item h5, .education-item h5 {
+  margin-top: 20px; /* Adds space above each h5 element in experience or education items */
+}
+
+.button-accordion {
+  display: block; /* Displays the accordion button as a block element */
+  width: 100%; /* Sets the accordion button to take the full width available */
+  text-align: center; /* Centers the text inside the accordion button */
+}

@@ -1,0 +1,16 @@
+/* Ensure the footer is always at the bottom */
+html, body {
+  height: 100%; /* Sets the height of html and body to 100% of the viewport height */
+  margin: 0; /* Removes the default margin around the html and body elements */
+}
+
+.d-flex {
+  display: flex; /* Applies flexbox layout to the element */
+  flex-direction: column; /* Arranges the flex items in a column (vertically) */
+  min-height: 100vh; /* Sets the minimum height of the element to 100% of the viewport height */
+}
+
+.flex-grow-1 {
+  flex: 1; /* Allows the element to grow and take up available space within the flex container */
+}
+
