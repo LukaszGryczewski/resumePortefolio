@@ -1,11 +1,12 @@
-<div class="container mt-4">
-  <div class="row">
+<div class ="container mt-4">
+  <div class ="row">
+
     <!-- About me -->
-    <div class="col-lg-6 shadow-sm border rounded p-3 mb-4">
-      <div class="text-center">
+    <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
+      <div class ="text-center">
         <h1>About me</h1>
-        <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" width="250px" height="250px" class="rounded-circle my-3">
-        <p class="lead">
+        <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" width="250px" height="250px" class ="rounded-circle my-3">
+        <p class ="lead">
           Passionate about Java development, I am in search of an engaging professional opportunity. Highly motivated and ready to
           take on new challenges, I am committed to fully investing my skills and enthusiasm to contribute meaningfully. I am
           determined to excel in a dynamic and innovative professional environment.
@@ -14,24 +15,24 @@
     </div>
 
     <!-- Feature Project -->
-    <div class="col-lg-6 shadow-sm border rounded p-3 mb-4">
-      <div class="d-flex flex-column h-100">
-        <div class="text-center mb-4">
+    <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
+      <div class ="d-flex flex-column h-100" >
+        <div class ="text-center mb-4">
           <h1>Feature Project</h1>
-          <div class="mt-auto btn">
-            <button class="btn btn-navigation mr-2" (click)="navigatePrev()">Previous</button>
-            <button class="btn btn-navigation" (click)="navigateNext()">Next</button>
+          <div class ="mt-auto btn">
+            <button class ="btn btn-navigation mr-2" (click)="navigatePrev()">Previous</button>
+            <button class ="btn btn-navigation" (click)="navigateNext()">Next</button>
           </div>
-          <h4 class="mb-3"><b>Project name : </b>{{ projects[currentProjectIndex].name }}</h4>
+          <h4 class ="mb-3">{{ projects[currentProjectIndex].name }}</h4>
           <ngb-carousel  *ngIf="projects.length > 0" [interval]="3000">
             <ng-template ngbSlide *ngFor="let picture of projects[currentProjectIndex].pictures">
-              <img class="d-block w-100 mb-3 rounded" [src]="picture" alt="slide">
+              <img class ="d-block w-100 mb-3 rounded" [src]="picture" alt="slide">
             </ng-template>
           </ngb-carousel>
-          <p class="p-project mb-3"><b>Subject : </b>{{ projects[currentProjectIndex].summary }}</p>
+          <p class ="p-project mb-3">{{ projects[currentProjectIndex].summary }}</p>
         </div>
-
       </div>
     </div>
+
   </div>
 </div>
