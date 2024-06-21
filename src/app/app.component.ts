@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbAccordionModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { ConfidentialityComponent } from './confidentiality/confidentiality.component';
 
 
 @Component({
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
             PortfolioComponent,
             ContactComponent,
             FooterComponent,
+            ConfidentialityComponent,
             RouterOutlet,
             RouterLink,
             NgbModalModule,
