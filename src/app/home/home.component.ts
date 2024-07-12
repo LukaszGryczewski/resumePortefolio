@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectsService } from '../_services/projects.service';
 import { Project } from '../_models/Project';
-import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarousel, NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 
@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
 
   projects: Project[] = [];
   currentProjectIndex: number = 0;
-
-  constructor(private titleService: Title, private projectsService: ProjectsService,private modalService: NgbModal) {
+  @ViewChild(NgbCarousel) carousel!: NgbCarousel;
+  constructor(private titleService: Title, private projectsService: ProjectsService) {
     this.titleService.setTitle("Lukasz Gryczewski - Home");
   }
 

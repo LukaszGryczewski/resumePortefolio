@@ -1,12 +1,11 @@
-<div class ="container mt-4">
-  <div class ="row">
-
+<div class="container mt-4">
+  <div class="row">
     <!-- About me -->
-    <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
-      <div class ="text-center">
+    <div class="col-12 col-md-6 shadow-sm border rounded p-3 mb-4">
+      <div class="text-center">
         <h1>About me</h1>
-        <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" width="250px" height="250px" class ="rounded-circle my-3">
-        <p class ="lead">
+        <img src="../../assets/pictures/avatarShirt.png" alt="Lukasz avatar" class="rounded-circle my-3 img-fluid">
+        <p class="lead">
           Passionate about Java development, I am in search of an engaging professional opportunity. Highly motivated and ready to
           take on new challenges, I am committed to fully investing my skills and enthusiasm to contribute meaningfully. I am
           determined to excel in a dynamic and innovative professional environment.
@@ -15,24 +14,32 @@
     </div>
 
     <!-- Feature Project -->
-    <div class ="col-lg-6 shadow-sm border rounded p-3 mb-4">
-      <div class ="d-flex flex-column h-100" >
-        <div class ="text-center mb-4">
-          <h1>Feature Project</h1>
-          <div class ="mt-auto btn">
-            <button class ="btn btn-navigation mr-2" (click)="navigatePrev()">Previous</button>
-            <button class ="btn btn-navigation" (click)="navigateNext()">Next</button>
+    <div class="col-12 col-md-6 shadow-sm border rounded p-3 mb-4">
+      <div class="d-flex flex-column h-100">
+        <div class="text-center mb-4">
+          <h1 class="mb-0">Projects</h1>
+          <div class="d-flex align-items-center justify-content-center mb-2 nav-project">
+            <button class="btn btn-navigation-left mr-2" (click)="navigatePrev()">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <h4 class="mb-0 mr-2">{{ projects[currentProjectIndex].name }}</h4>
+            <button class="btn btn-navigation-right" (click)="navigateNext()">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
-          <h4 class ="mb-3">{{ projects[currentProjectIndex].name }}</h4>
-          <ngb-carousel  *ngIf="projects.length > 0" [interval]="3000">
+          <ngb-carousel *ngIf="projects.length > 0" [interval]="0" [animation]="false" [showNavigationIndicators]="false">
             <ng-template ngbSlide *ngFor="let picture of projects[currentProjectIndex].pictures">
-              <img class ="d-block w-100 mb-3 rounded" [src]="picture" alt="slide">
+              <div class="carousel-image-container">
+                <img class="d-block rounded img-fluid" [src]="picture" alt="slide">
+              </div>
             </ng-template>
           </ngb-carousel>
-          <p class ="p-project mb-3">{{ projects[currentProjectIndex].summary }}</p>
+
+          <div class="summary-container">
+            <p class="p-project mb-3">{{ projects[currentProjectIndex].summary }}</p>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>

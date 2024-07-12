@@ -25,3 +25,23 @@
   /* Custom icon for navbar toggler with three horizontal lines */
 }
 
+/* Media queries for responsive design */
+@media (max-width: 767.98px) {
+  .navbar {
+    text-align: center; /* Center text on small screens */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically on small screens */
+    width: 100%; /* Ensure full width */
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Add some margin between nav items */
+  }
+
+  .navbar-toggler {
+    margin-bottom: 1rem; /* Add margin below toggler button */
+  }
+}
+

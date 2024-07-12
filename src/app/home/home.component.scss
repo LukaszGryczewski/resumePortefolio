@@ -1,121 +1,261 @@
 /* Adds a top margin of 20 pixels to elements with the container class */
 .container {
-  margin-top: 20px; /* Adds a top margin of 20 pixels */
+  margin-top: 20px;
 }
 
 /* Applies a light shadow to elements with the shadow-sm class */
 .shadow-sm {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Adds a light shadow effect */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* Applies a solid border of 1 pixel with color #dee2e6 to elements with the border class */
 .border {
-  border: 1px solid #dee2e6 !important; /* Adds a 1-pixel solid border with a light gray color */
+  border: 1px solid #dee2e6 !important;
 }
 
 /* Applies a border-radius of 8 pixels to elements with the rounded class */
 .rounded {
-  border-radius: 8px !important; /* Rounds the corners with an 8-pixel radius */
+  border-radius: 8px !important;
 }
 
 /* Adds padding of 1.5rem (24 pixels) to elements with the p-3 class */
 .p-3 {
-  padding: 1.5rem !important; /* Adds padding of 1.5 rem */
+  padding: 1.5rem !important;
 }
 
 /* Adds a bottom margin of 1.5rem (24 pixels) to elements with the mb-4 class */
 .mb-4 {
-  margin-bottom: 1.5rem !important; /* Adds a bottom margin of 1.5 rem */
+  margin-bottom: 1.5rem !important;
 }
 
 /* Centers the text of elements with the text-center class */
 .text-center {
-  text-align: center !important; /* Centers the text */
+  text-align: center !important;
 }
 
 /* Sets the font size to 1.25rem and the font weight to 300 for elements with the lead class */
 .lead {
-  font-size: 1.25rem; /* Sets the font size to 1.25 rem */
-  font-weight: 300; /* Sets the font weight to 300 */
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 /* Applies a border-radius of 8 pixels, ensures the image covers its container, and sets the height to 300 pixels for carousel item images */
 .carousel .carousel-item img {
-  border-radius: 8px; /* Rounds the corners with an 8-pixel radius */
-  object-fit: cover; /* Ensures the image covers the container */
-  height: 300px; /* Sets the height to 300 pixels */
+  border-radius: 8px;
+  object-fit: contain; /* Changed to contain */
+  height: 300px;
 }
 
 /* Sets the background color of the carousel control previous and next icons to black, rounds the edges, and adds 10 pixels of padding */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000; /* Sets the background color to black */
-  border-radius: 50%; /* Rounds the edges */
-  padding: 10px; /* Adds 10 pixels of padding */
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 /* Sets the background color of carousel indicators to black */
 .carousel-indicators li {
-  background-color: #000; /* Sets the background color to black */
+  background-color: #000;
 }
 
 /* Sets the background color of active carousel indicators to white */
 .carousel-indicators .active {
-  background-color: #fff; /* Sets the background color to white */
+  background-color: #fff;
 }
 
 /* Disables the transition for the carousel inner */
 .carousel-inner {
-  transition: none; /* Disables the transition */
+  transition: none;
 }
 
 /* Sets the font size to 2rem, font weight to 700, and text color to #343a40 for h1 elements */
 h1 {
-  font-size: 2rem; /* Sets the font size to 2 rem */
-  font-weight: 700; /* Sets the font weight to 700 */
-  color: #343a40; /* Sets the text color to dark gray */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
   margin-bottom: 20px !important;
 }
 
 /* Sets the font size to 1.5rem, font weight to 600, and text color to #495057 for h4 elements */
 h4 {
-  font-size: 1.5rem; /* Sets the font size to 1.5 rem */
-  font-weight: 600; /* Sets the font weight to 600 */
-  color: #3a4047; /* Sets the text color to medium gray */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3a4047;
   margin-bottom: 20px !important;
 }
 
 /* Sets the font size to 1.25rem, font weight to 500, and text color to #6c757d for h5 elements */
 .p-projects {
-  font-size: 1.10rem; /* Sets the font size to 1.25 rem */
-  font-weight: 500; /* Sets the font weight to 500 */
-  color: #3a4047;; /* Sets the text color to light gray */
-
+  font-size: 1.10rem;
+  font-weight: 500;
+  color: #3a4047;
 }
 
 /* Adds a solid border of 3 pixels with color #495057 to images with the img-rounded-circle class */
 .img-rounded-circle {
-  border: 3px solid #495057; /* Adds a 3-pixel solid border with medium gray color */
-}
-
-
-.btn{
-  margin-bottom: 10px;
+  border: 3px solid #495057;
 }
 
 /* Sets the body font to 'Arial' and the background color to #f8f9fa */
 body {
-  font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
-  background-color: #f8f9fa; /* Sets the background color to light gray */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
 }
 
-ngb-carousel{
+ngb-carousel {
   margin-bottom: 20px;
 }
 
-.btn-navigation {
-  background-color: #f8f9fa; /* Light gray background */
-  color: #495057; /* Dark text color */
-  font-weight: bold; /* Bold text */
-  border: 1px solid #dee2e6; /* Light border */
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for navigation buttons and icons */
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 18px;
+  color: #495057;
+}
+
+.fa-chevron-left:before,
+.fa-chevron-right:before {
+  content: "\f053";
+}
+
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* Center align h4 and buttons */
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for carousel images */
+.carousel-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel-image-container img {
+  object-fit: contain; /* Changed to contain */
+  width: 100%;
+  height: 100%;
+}
+
+/* Container for project summary */
+.summary-container {
+  height: 100px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Remove or comment out these styles */
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-next {
+  margin-right: 3%;
+}
+
+.carousel-control-prev {
+  margin-left: 3%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 1.5rem;
+}
+
+/* Navigation buttons */
+.btn-navigation-left,
+.btn-navigation-right {
+  background-color: transparent;
+  color: #495057;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-navigation-left i,
+.btn-navigation-right i {
+  font-size: 18px;
+}
+
+.btn-navigation-left {
+  margin-right: 10px;
+}
+
+.btn-navigation-right {
+  margin-left: 10px;
+}
+
+.btn-navigation-left:focus,
+.btn-navigation-right:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-project {
+  margin-top: 3%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767.98px) {
+  .text-center h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-center h4 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-image-container {
+    height: auto; /* Allow the height to adjust for smaller screens */
+  }
+
+  .carousel-image-container img {
+    height: auto; /* Allow the height to adjust for smaller screens */
+  }
+
+  .nav-project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-navigation-left,
+  .btn-navigation-right {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .summary-container {
+    height: auto; /* Allow the height to adjust for smaller screens */
+    padding: 10px 5px;
+  }
 }
