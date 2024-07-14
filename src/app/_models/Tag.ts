@@ -12,6 +12,7 @@ export class Tag {
   static readonly JQUERY = new Tag('Jquery','darkblue');
   static readonly AJAX = new Tag('Ajax','lightskyblue');
   static readonly BOOTSTRAP = new Tag('Bootstrap','purple');
+  static readonly APIREST = new Tag('API Rest','green');
 
   constructor(private readonly key : string, public readonly color : string ){}
 
