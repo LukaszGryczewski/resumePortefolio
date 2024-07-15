@@ -259,3 +259,9 @@ ngb-carousel {
     padding: 10px 5px;
   }
 }
+
+.about-me-avatar {
+  width: 300px; /* Changez cette valeur pour ajuster la largeur souhaitée */
+  height: 300px; /* Changez cette valeur pour ajuster la hauteur souhaitée */
+  object-fit: cover; /* Ajuste l'image pour qu'elle couvre entièrement l'espace tout en conservant son ratio */
+}
